@@ -62,4 +62,6 @@ __tests__/
 .gitattributes
 babel.config.js
 metro.config.js
-
+yarn.lock
+package.json
+.watchmanconfig

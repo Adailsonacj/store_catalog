@@ -54,14 +54,5 @@ buck-out/
 
 # Bundle artifact
 *.jsbundle
-
 .directory
 __tests__/
-.buckconfig
-.flowconfig
-.gitattributes
-babel.config.js
-metro.config.js
-yarn.lock
-package.json
-.watchmanconfig

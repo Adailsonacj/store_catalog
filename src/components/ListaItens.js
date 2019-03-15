@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react'
-import { ScrollView, Text } from 'react-native';
+import { ScrollView } from 'react-native';
 import Itens from './Itens'
 import axios from 'axios'
 
@@ -13,8 +13,7 @@ export default class ListaItens extends Component {
     }
     //  Executa antes de renderizar o componente
     componentWillMount() {
-        //  Requisição HTTP
-        //  http://faus.com.br/recursos/c/dmairr/api/itens.html
+        //  Faz requisição HTTP e retorna os dados
         axios.get('http://faus.com.br/recursos/c/dmairr/api/itens.html')
             .then(response => { this.setState({ listaItens: response.data }) })
             .catch(() => { console.log('Erro ao recuperar dados') })
